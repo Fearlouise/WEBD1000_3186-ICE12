@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-/* Styles for Acme Lawn Care */
+/* Styles for Acme Lawn Care 
+Name: Louise Fear
+Date: March 7th, 2023
+*/
+
 h1, h2 {
 	text-align: center;
 }
@@ -41,4 +45,38 @@ section h2 {
 	grid-row: 3 / 3;
 	grid-column: 1 / span 2;
 	margin-bottom: 50px;
+}
+
+/*for phone*/
+@media only screen and (max-width: 767px){
+	h1{
+		font-size: 1.4em;
+	}
+	h2{
+		font-size: 1.2em;
+		background-color: red;
+	}
+	article{
+		margin-bottom: 10px;
+	}
+}
+
+/*for tablet*/
+@media only screen and (min-width:768px){
+	section {
+		grid-template-columns: 2fr 2fr;
+	}
+	h2{
+		background-color: yellow;
+	}
+}
+
+/*for desktop*/
+@media only screen and (min-width:1024px){
+	h2{
+		background-color: blue;
+	}
+	section {
+		grid-template-columns: 3fr 2fr;
+	}
 }
